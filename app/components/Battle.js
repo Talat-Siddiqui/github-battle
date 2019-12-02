@@ -73,7 +73,6 @@ class PlayerInput extends React.Component {
             disabled={!this.state.username}
           >
             Submit
-          
           </button>
         </div>
       </form>
@@ -147,7 +146,17 @@ export default class Battle extends React.Component {
     const {playerOne, playerTwo, battle} = this.state
     
     if (battle === true) {
-      return <Results playerOne={playerOne} playerTwo={playerTwo}/>
+      return (
+        <Results
+          playerOne={playerOne}
+          playerTwo={playerTwo}
+          onReset={() => this.setState({
+            playerOne: null,
+            playerTwo: null,
+            battle: false
+          })}
+        />
+      )
     }
     
     return (
@@ -168,6 +177,7 @@ export default class Battle extends React.Component {
                 onReset={() => this.handleReset('playerOne')}
               />
             }
+            
             {playerTwo === null
               ? <PlayerInput
                 label='Player Two'
@@ -179,13 +189,15 @@ export default class Battle extends React.Component {
                 onReset={() => this.handleReset('playerTwo')}
               />
             }
-          
           </div>
+          
+          
           {playerOne && playerTwo && (
-            <button className='btn dark-btn btn-space'
-                    onClick={() => this.setState({battle: true})}>
+            <button
+              className='btn dark-btn btn-space'
+              onClick={() => this.setState({battle: true})}
+            >
               Battle
-            
             </button>
           )}
         </div>
