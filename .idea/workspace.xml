@@ -63,8 +63,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/components/Popular.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="759">
-              <caret line="116" column="3" lean-forward="true" selection-start-line="114" selection-start-column="2" selection-end-line="116" selection-end-column="3" />
+            <state relative-caret-position="677">
+              <caret line="121" column="6" lean-forward="true" selection-start-line="121" selection-start-column="6" selection-end-line="121" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -265,7 +265,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156182000" />
+    <option name="totallyTimeSpent" value="156560000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1916" height="960" extended-state="0" />
@@ -437,8 +437,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/components/Popular.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="116" column="3" lean-forward="true" selection-start-line="114" selection-start-column="2" selection-end-line="116" selection-end-column="3" />
+        <state relative-caret-position="677">
+          <caret line="121" column="6" lean-forward="true" selection-start-line="121" selection-start-column="6" selection-end-line="121" selection-end-column="6" />
         </state>
       </provider>
     </entry>
