@@ -86,10 +86,6 @@ export default class Popular extends React.Component {
     error: null,
   }
   
-  componentDidMount() {
-    this.updateLanguage(this.state.selectedLanguage)
-  }
-  
   updateLanguage = (selectedLanguage) => {
     this.setState({
       selectedLanguage,
@@ -114,6 +110,10 @@ export default class Popular extends React.Component {
           })
         })
     }
+  }
+  
+  componentDidMount() {
+    this.updateLanguage(this.state.selectedLanguage)
   }
   isLoading = () => {
     const {selectedLanguage, repos, error} = this.state
