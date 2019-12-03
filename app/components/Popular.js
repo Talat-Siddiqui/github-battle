@@ -117,9 +117,8 @@ export default class Popular extends React.Component {
   }
   
   componentWillMount() {
-    this.setState({
-      selectedLanguage: null
-    })
+    this.isLoading()
+    
   }
   
   isLoading = () => {
