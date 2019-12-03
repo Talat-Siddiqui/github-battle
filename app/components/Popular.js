@@ -80,6 +80,7 @@ ReposGrid.propTypes = {
 }
 
 export default class Popular extends React.Component {
+  _isMounted = false
   state = {
     selectedLanguage: 'All',
     repos: {},
@@ -87,6 +88,7 @@ export default class Popular extends React.Component {
   }
   
   componentDidMount() {
+    this._isMounted = true
     this.updateLanguage(this.state.selectedLanguage)
   }
   
@@ -117,9 +119,7 @@ export default class Popular extends React.Component {
   }
   
   componentWillUnmount() {
-    this.setState({
-      selectedLanguage: null
-    })
+    this._isMounted = false;
   }
   
   isLoading = () => {
