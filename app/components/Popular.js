@@ -116,9 +116,10 @@ export default class Popular extends React.Component {
     }
   }
   
-  componentWillMount() {
-    this.isLoading()
-    
+  componentWillUnmount() {
+    this.setState({
+      selectedLanguage: null
+    })
   }
   
   isLoading = () => {
